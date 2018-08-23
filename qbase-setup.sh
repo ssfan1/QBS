@@ -22,7 +22,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 #qbase TCP port
-PORT=13981
+PORT=13980
 
 #Clear keyboard input buffer
 function clear_stdin { while read -r -t 0; do read -r; done; }
@@ -127,15 +127,15 @@ fi
 
 #Installing Daemon
 cd ~
-#sudo rm qbase.tar.gz
-#wget https://github.com/Qbase-Core/Qbase/releases/download/v1.01/qbase.tar.gz
-#sudo tar -xvf qbase.tar.gz --strip-components 1 --directory /usr/bin
-#sudo rm qbase.tar.gz
+#sudo rm qbase-linux.tar.gz
+#wget https://github.com/Qbase-Core/Qbase/releases/download/v1.0/qbase-linux.tar.gz
+#sudo tar -xvf qbase-linux.tar.gz --strip-components 1 --directory /usr/bin
+#sudo rm qbase-linux.tar.gz
 
 stop_daemon
 
 # Deploy binaries to /usr/bin
-sudo cp qbaseMasternodeSetup/qbase-v1.01/qbase* /usr/bin/
+sudo cp qbaseMasternodeSetup/qbase-v1.0/qbase* /usr/bin/
 sudo chmod 755 -R ~/qbaseMasternodeSetup
 sudo chmod 755 /usr/bin/qbase*
 
