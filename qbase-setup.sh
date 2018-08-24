@@ -22,7 +22,7 @@ YELLOW='\033[1;33m'
 NC='\033[0m' # No Color
 
 #qbase TCP port
-PORT=13980
+PORT=13981
 
 #Clear keyboard input buffer
 function clear_stdin { while read -r -t 0; do read -r; done; }
