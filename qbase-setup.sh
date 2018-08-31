@@ -127,10 +127,10 @@ fi
 
 #Installing Daemon
 cd ~
-#sudo rm qbase-linux.tar.gz
-#wget https://github.com/Qbase-Core/Qbase/releases/download/v1.0/qbase-linux.tar.gz
-#sudo tar -xvf qbase-linux.tar.gz --strip-components 1 --directory /usr/bin
-#sudo rm qbase-linux.tar.gz
+#sudo rm qbase-testnet.tar.gz
+#wget https://github.com/Qbase-Core/Qbase/releases/download/v1.0/qbase-testnet.tar.gz
+#sudo tar -xvf qbase-testnet.tar.gz --strip-components 1 --directory /usr/bin
+#sudo rm qbase-testnet.tar.gz
 
 stop_daemon
 
@@ -190,9 +190,7 @@ maxconnections=64
 externalip=$publicip
 masternode=1
 masternodeprivkey=$genkey
-addnode=207.148.77.184:13981
-addnode=192.168.1.30:13981
-addnode=192.168.1.17:13981
+addnode=192.168.1.6:13981
 EOF
 
 #Finally, starting qbase daemon with new qbase.conf
