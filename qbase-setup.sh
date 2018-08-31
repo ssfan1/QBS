@@ -190,7 +190,10 @@ maxconnections=64
 externalip=$publicip
 masternode=1
 masternodeprivkey=$genkey
-addnode=192.168.1.6:13981
+addnode=192.168.1.17:13981
+addnode=192.168.1.8:13981
+addnode=seed1.qbasecore.com:13981
+addnode=pool.qbasecore.com:13981
 EOF
 
 #Finally, starting qbase daemon with new qbase.conf
