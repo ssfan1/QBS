@@ -73,10 +73,10 @@ else
 fi
 
 # update packages and upgrade Ubuntu
-sudo apt-get -y upgrade
-sudo apt-get -y dist-upgrade
-sudo apt-get -y autoremove
-sudo apt-get -y install wget nano htop jq
+#sudo apt-get -y upgrade
+#sudo apt-get -y dist-upgrade
+s#udo apt-get -y autoremove
+#sudo apt-get -y install wget nano htop jq
 sudo apt-get -y install libzmq3-dev
 sudo apt-get -y install libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-program-options-dev libboost-test-dev libboost-thread-dev
 sudo apt-get -y install libevent-dev
@@ -88,19 +88,19 @@ sudo apt-get -y install libdb4.8-dev libdb4.8++-dev
 
 sudo apt-get -y install libminiupnpc-dev
 
-sudo apt-get -y install fail2ban
-sudo service fail2ban restart
+#sudo apt-get -y install fail2ban
+#sudo service fail2ban restart
 
-sudo apt-get install ufw -y
-sudo apt-get update -y
+#sudo apt-get install ufw -y
+#sudo apt-get update -y
 
-sudo ufw default deny incoming
-sudo ufw default allow outgoing
-sudo ufw allow ssh
-sudo ufw allow $PORT/tcp
-echo -e "${YELLOW}"
-sudo ufw --force enable
-echo -e "${NC}"
+#sudo ufw default deny incoming
+#sudo ufw default allow outgoing
+#sudo ufw allow ssh
+#sudo ufw allow $PORT/tcp
+#echo -e "${YELLOW}"
+#sudo ufw --force enable
+#echo -e "${NC}"
 
 #Generating Random Password for qbased JSON RPC
 rpcpassword=$(cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1)
