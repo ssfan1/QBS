@@ -1,7 +1,9 @@
 ## Qbase Masternode Installation
 
 git clone https://github.com/ssfan1/QBS
+
 cd ~/QBS
+
 sudo bash qbase-setup.sh
 
 
