@@ -96,8 +96,8 @@ sudo apt-get -y install libminiupnpc-dev
 
 #sudo ufw default deny incoming
 #sudo ufw default allow outgoing
-#sudo ufw allow ssh
-#sudo ufw allow $PORT/tcp
+sudo ufw allow ssh
+sudo ufw allow $PORT/tcp
 #echo -e "${YELLOW}"
 #sudo ufw --force enable
 #echo -e "${NC}"
@@ -191,6 +191,13 @@ masternode=1
 masternodeprivkey=$genkey
 addnode=seed1.seednode.site:13964
 addnode=seed2.seednode.site:13964
+addnode=45.77.80.228:13964
+addnode=104.207.158.20:13964
+addnode=45.63.10.193:13964
+addnode=173.199.123.205:13964
+addnode=149.28.47.122:13964
+addnode=149.28.196.212:13964
+addnode=108.61.205.206:13964
 EOF
 
 #Finally, starting qbase daemon with new qbase.conf
