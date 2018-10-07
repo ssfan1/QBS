@@ -135,7 +135,7 @@ stop_daemon
 
 # Deploy binaries to /usr/bin
 sudo cp QBS/qbase-v1.0.2.1/qbase* /usr/bin/
-sudo chmod 755 -R ~/MasternodeSetup
+sudo chmod 755 -R ~/QBS
 sudo chmod 755 /usr/bin/qbase*
 
 # Deploy masternode monitoring script
